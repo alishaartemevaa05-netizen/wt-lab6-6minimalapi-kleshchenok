@@ -5,7 +5,7 @@
 Хранение данных — в памяти приложения 
 
 - GitHub: https://github.com/alishaartemevaa05-netizen/wt-lab6-6minimalapi-kleshchenok
-- Render: https://<имя-сервиса>.onrender.com
+- Render: https://wt-lab6-6minimalapi-kleshchenok-1.onrender.com 
 
 ## Запуск
 
