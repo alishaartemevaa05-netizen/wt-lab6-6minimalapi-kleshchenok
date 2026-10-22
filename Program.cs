@@ -46,7 +46,7 @@ api.MapGet("/info", () => new
 {
     Application = "Web Technologies",
     Technology = "ASP.NET Core Minimal API",
-    Version = "1.0",
+    Version = "1.1",
     Domain = "Прокат автомобилей",
     Author = "А.А. Клещёнок"
 }).WithTags("Info").WithSummary("Информация о приложении");
@@ -245,9 +245,7 @@ rentals.MapPost("/{id:int}/complete", (int id) =>
     return Results.NoContent();                                         // 204
 }).WithSummary("Завершить аренду");
 
-// ───────────────────────── Блок 7. Порт для Render ─────────────────────────
+// Блок 7. Порт для Render
 
-// Render передаёт порт в переменной окружения PORT; локально используем 10000.
-// 0.0.0.0 — слушать на всех сетевых интерфейсах (иначе контейнер недоступен снаружи).
 var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
 app.Run($"http://0.0.0.0:{port}");
