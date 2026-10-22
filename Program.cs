@@ -87,7 +87,7 @@ cars.MapGet("", (string? search, CarCategory? category, bool? available) =>
 cars.MapGet("/{id:int}", (int id) =>
 {
     var car = CarStore.GetById(id);
-    return car is null ? Results.NotFound() : Results.Ok(car);   // 404 / 200
+    return car is null ? Results.NotFound() : Results.Ok(car);
 }).WithSummary("Получить автомобиль по Id");
 
 // POST /api/cars — объект приходит в теле запроса (JSON), Id назначает сервер.
@@ -242,7 +242,7 @@ rentals.MapPost("/{id:int}/complete", (int id) =>
 
     var car = CarStore.GetById(rental.CarId);
     if (car is not null) car.IsAvailable = true;
-    return Results.NoContent();                                         // 204
+    return Results.NoContent();
 }).WithSummary("Завершить аренду");
 
 // Блок 7. Порт для Render
