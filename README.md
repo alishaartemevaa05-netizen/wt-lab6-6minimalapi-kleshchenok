@@ -2,9 +2,9 @@
 
 Лабораторная работа № 6 «Web-технологии» — **REST API на ASP.NET Core Minimal API** и публикация на Render.
 Предметная область: **прокат автомобилей** (основная сущность `Car`, как в WT-3, WT-4, WT-5).
-Хранение данных — в памяти приложения (статические классы-хранилища), без СУБД и ORM.
+Хранение данных — в памяти приложения 
 
-- GitHub: https://github.com/<логин>/wt-lab6-6minimalapi-kleshchenok
+- GitHub: https://github.com/alishaartemevaa05-netizen/wt-lab6-6minimalapi-kleshchenok
 - Render: https://<имя-сервиса>.onrender.com
 
 ## Запуск
