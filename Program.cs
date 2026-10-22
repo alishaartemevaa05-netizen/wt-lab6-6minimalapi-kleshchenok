@@ -115,7 +115,7 @@ cars.MapDelete("/{id:int}", (int id) =>
 {
     if (CarStore.GetById(id) is null) return Results.NotFound();        // 404
 
-    if (RentalStore.HasActiveRental(id))                                /
+    if (RentalStore.HasActiveRental(id))                                
         return Results.Conflict(new { error = "Нельзя удалить автомобиль с активной арендой." }); // 409
 
     CarStore.Remove(id);
